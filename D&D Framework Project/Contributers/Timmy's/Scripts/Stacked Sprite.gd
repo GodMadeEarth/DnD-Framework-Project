@@ -23,5 +23,7 @@ func offset_layers(y=4):
 	var totalYOffset = 0
 	for child in get_children():
 		child.position.y = totalYOffset
-		child.z_index = -totalYOffset / 2
-		totalYOffset -= y
+		if not child is CollisionObject2D:
+			
+			child.z_index = -totalYOffset / 2
+			totalYOffset -= y

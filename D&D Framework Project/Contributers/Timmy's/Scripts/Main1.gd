@@ -6,4 +6,4 @@ func _ready():
 	pass
 
 func _process(delta):
-	$World.rotation_degrees += 50 * delta
+	$World.rotation_degrees += 30 * delta
